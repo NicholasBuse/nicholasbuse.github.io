@@ -5,12 +5,12 @@ url                          : "http://nicholasbuse.com" # the base hostname & p
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : YANB
+  title                      : Nicholas Buse
   description                  : >
-                               Yet ANother Blog
+                               A Blog
 
 # Layout configuration
-  logo_path                  : "assets/img/dactl.svg" # path to logo file
+  logo_path                  : "assets/img/logo.svg" # path to logo file
   search_path                : "nicholasbuse.github.io"
                                # needed for searchbox in archive page
   hero_layout                : true # turn on hero layout for blog and posts
@@ -28,10 +28,10 @@ blog:
 author:
   fullname                  : Nicholas Buse
   rss                       : true # generate RSS feed and show it's icon in header
-  mail                      : nicholasbuse@gmail.com # change to your e-mail address
+  mail                      : # nicholasbuse@gmail.com # change to your e-mail address
   twitter                   : NicholasBuse
   github                    : NicholasBuse
-  youtube                   : MNBooZe
+  youtube                   : # MNBooZe
   stackoverflow             : # nicholas-buse
   disqus                    : nicholasbuse # your disqus site name
   google_analytics          : 'UA-64642815-1'
