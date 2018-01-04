@@ -29,10 +29,10 @@ author:
   fullname                  : Nicholas Buse
   rss                       : true # generate RSS feed and show it's icon in header
   mail                      : nicholasbuse@gmail.com # change to your e-mail address
-  twitter                   : NihcolasBuse
+  twitter                   : NicholasBuse
   github                    : NicholasBuse
   youtube                   : MNBooZe
-  stackoverflow             : nicholas-buse
+  stackoverflow             : # nicholas-buse
   disqus                    : nicholasbuse # your disqus site name
   google_analytics          : 'UA-64642815-1'
   photo                     : "uploads/me2.png"
