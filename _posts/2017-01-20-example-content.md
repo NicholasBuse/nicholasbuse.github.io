@@ -7,7 +7,7 @@ tags:
 description: >
   Howdy! This is an example blog post that shows several types of HTML content
   supported in this theme.
-hero: https://source.unsplash.com/collection/145103/
+hero: uploads/me.png
 overlay: green
 published: true
 ---

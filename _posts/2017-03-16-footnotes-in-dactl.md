@@ -4,7 +4,7 @@ title: Footnotes
 tags:
   - dactl
   - howto
-hero: https://source.unsplash.com/collection/228632/
+hero: uploads/me.png
 overlay: red
 ---
 
