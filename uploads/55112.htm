@@ -2,21 +2,64 @@
 <html>
 <head>
     <title>55112</title>
-    <link rel="icon" href="https://darksky.net/favicon.ico">
+    <link rel="icon" href="https://climacell.co/favicon.ico">
+    <script type="text/javascript" src="https://widgets-viewer.climacell.co/v1/sdk.js"></script>
     <meta http-equiv="refresh" content="600">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1280px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
 </head>
-<body bgcolor="000000">
-    <!-- Graph Bar -->
-    <script type='text/javascript' src='https://darksky.net/widget/graph-bar/45.0659,-93.2065/us12/en.js?width=100%25&height=320&title=Full Forecast&textColor=FFFFFF&bgColor=444444&transparency=false&fontFamily=Default&customFont=&units=us&timeColor=FFFFFF&tempColor=FFFFFF&currentDetailsOption=true'></script>
-    <!-- Default -->
-    <script type='text/javascript' src='https://darksky.net/widget/default/45.0659,-93.2065/us12/en.js?width=100%25&height=320&title=New Brighton&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&htColor=FFFFFF&ltColor=777777&displaySum=yes&displayHeader=yes'></script>
-    <!-- Embedded Temp -->
-    <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=777777&markerColor=777777'></script>
-    <!-- Embedded Precip -->
-    <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=precip_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=000099&markerColor=000099'></script>
-    <!-- Embedded Wind -->
-    <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=wind_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=009900&markerColor=009900'></script>
-    <!-- Embedded Pressure -->
-    <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=pressure_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=990000&markerColor=990000'></script>
+<body bgcolor="333333">
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <!-- Now Cast -->
+        <!-- <div class="climacell-widget" data-apikey="7ISAqMyWM9SoXLdi0hYP47vSK2Bdx4fs" data-type="nowcast" data-location-name="New Brighton, MN, USA" data-location-lon="-93.2018908" data-location-lat="45.0655212" data-size-mode="large" data-font-color="#000000" data-background-color="#ffffff" data-font-family="verdana" data-weather-params="temp:F,wind_speed:mph,precipitation:mm/hr,humidity:%,cloud_cover:%" data-precipitation-timeline="true" ></div> -->
+        <!-- Hourly -->
+        <div class="climacell-widget" data-apikey="7ISAqMyWM9SoXLdi0hYP47vSK2Bdx4fs" data-type="hourly" data-location-name="New Brighton, MN, USA" data-location-lon="-93.2018908" data-location-lat="45.0655212" data-size-mode="large" data-font-color="#000" data-background-color="#fff" data-font-family="verdana" data-weather-params="temp:F,precipitation:mm/hr,baro_pressure:inHg,visibility:mi,dewpoint:F" data-precipitation-timeline="true" data-sunrise-sunset="true" ></div>
+        <!-- Daily -->
+        <div class="climacell-widget" data-apikey="7ISAqMyWM9SoXLdi0hYP47vSK2Bdx4fs" data-type="daily" data-location-name="New Brighton, MN, USA" data-location-lon="-93.2018908" data-location-lat="45.0655212" data-size-mode="large" data-font-color="#000" data-background-color="#fff" data-font-family="verdana" data-weather-params="temp:F,precipitation:mm/hr,humidity:%" ></div>
+    </div>
+
+    <div class="column" style="background-color:#000;">
+        <!-- Graph Bar -->
+        <script type='text/javascript' src='https://darksky.net/widget/graph-bar/45.0659,-93.2065/us12/en.js?width=100%25&height=320&title=Full Forecast&textColor=FFFFFF&bgColor=444444&transparency=false&fontFamily=Default&customFont=&units=us&timeColor=FFFFFF&tempColor=FFFFFF&currentDetailsOption=true'></script>
+        <!-- Default -->
+        <script type='text/javascript' src='https://darksky.net/widget/default/45.0659,-93.2065/us12/en.js?width=100%25&height=320&title=New Brighton&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&htColor=FFFFFF&ltColor=777777&displaySum=yes&displayHeader=yes'></script>
+        <!-- Embedded Temp -->
+        <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=temperature_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=777777&markerColor=777777'></script>
+        <!-- Embedded Precip -->
+        <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=precip_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=000099&markerColor=000099'></script>
+        <!-- Embedded Wind -->
+        <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=wind_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=009900&markerColor=009900'></script>
+        <!-- Embedded Pressure -->
+        <script type='text/javascript' src='https://darksky.net/widget/graph/45.0659,-93.2065/us12/en.js?width=100%25&height=280&title=55112&textColor=FFFFFF&bgColor=transparent&transparency=true&fontFamily=Default&customFont=&units=us&graph=pressure_graph&timeColor=FFFFFF&tempColor=FFFFFF&lineColor=990000&markerColor=990000'></script>
+    </div>
+</div>
 </body>
 </html>
